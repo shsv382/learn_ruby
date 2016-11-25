@@ -55,7 +55,7 @@ describe "Performance Monitor" do
   end
 
   it "returns the average time, not the total time, when running multiple times" do
-    run_times = [8,6,5,7]
+   run_times = [8,6,5,7]
     fake_time = @eleven_am
     Time.stub(:now) { fake_time }
     average_time = measure(4) do
