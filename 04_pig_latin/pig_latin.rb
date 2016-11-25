@@ -1,13 +1,13 @@
 #!/usr/bin/env ruby
 
-def translate (string)
+def translate(string)
 
 		string.to_s
 
 		case string[0] 			
 		# Первая буква гласная
 		when "a" || "e" ||  "i" ||  "o" ||  "u"
-			string + "ay"
+			string = string + "ay"
 		else 			
 		# Первая согласная
 			case string[1]
@@ -34,7 +34,7 @@ def translate (string)
 			end
 		end
 
-
+string
 end
 
 
