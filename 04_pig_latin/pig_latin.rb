@@ -25,17 +25,31 @@ def translate(string)
 					endstr = string[0, 2]
 					string = string[2, string.length - 2]
 					string = string + endstr + "ay"
+					if string[0] == "a" || 
+						string[0] == "e" || 
+						string[0] == "i" || 
+						string[0] == "o" || 
+						string[0] == "u"
+						
+						string
+					else 	
+						endstr = string[0]
+						string = string[1, string.length - 3]
+						string = string + endstr + "ay"
+						string
+					end
+			end
+		end
+
+string
+
+end
+
+
+
 #				else
 				# Три согласные и более	
 #					endstr = string[0, 3]
 #					string = string[3, string.length - 3]
 #					string = string + endstr + "ay"
-#				end
-			end
-		end
-
-string
-end
-
-
-translate "apple"
+					
